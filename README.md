@@ -19,11 +19,14 @@ The scope of the project includes navigation, conditional feature access based o
 
 Choice of Tech Stack and Justification
 
-React was selected as the front end framework due to its component based architecture, which supports separation of concerns, reusability, and long term maintainability. Compared to traditional multi page approaches, React enables efficient state management and smoother user interactions, making it suitable for a platform expected to scale in complexity.
+React vs Other Frameworks
+React is pretty much the standard these days for web projects, and for good reason. It’s flexible, has a massive community, and makes it easy to build reusable components. But it’s not the only option. Vue.js is known for being beginner-friendly and has a gentler learning curve, which is great if you’re just starting out. Svelte is interesting because it compiles down to plain JavaScript, so your apps can feel faster and lighter. Angular is powerful for big projects, but it’s also heavier and a bit harder to get your head around. SolidJS and Qwik are newer and promise even better performance, especially if you’re building something that needs to be super fast.​
 
-Vite was chosen as the build tool and development environment because it offers faster development startup times and more efficient hot module reloading than older tooling such as Create React App. This improves development efficiency and reduces iteration time.
+Vite vs Other Build Tools
+Vite is the new kid on the block, and it’s really fast to set up and run. If you’ve ever waited ages for Webpack to start, you’ll appreciate how quick Vite is. Webpack is still popular for complex projects, but it’s slower and can be a pain to configure. Turbopack (used in Next.js) is great for big apps, but it’s still a bit new and not as well supported as Vite. Parcel is super simple to use, but it doesn’t have as many plugins or as big a community.​
 
-Tailwind CSS was selected for styling due to its utility first approach, which promotes consistency across the interface and simplifies responsive design. This choice reduces custom CSS complexity and supports rapid UI iteration.
+Tailwind CSS vs Other CSS Frameworks
+Tailwind’s utility-first approach makes it easy to keep your styles consistent and flexible, and its just-in-time compiler means you only load what you actually use. Bootstrap is more traditional, with lots of ready-made components, but it can feel a bit limiting if you want something unique. Windi CSS is like Tailwind but compiles even faster, so it’s good for bigger projects. Materialize CSS and Bulma are nice if you want pre-built components, but they’re not as easy to customise.
 
 Client side routing is handled using React Router, allowing logical separation of pages and seamless navigation without full page reloads.
 
