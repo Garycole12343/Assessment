@@ -7,7 +7,7 @@ import Skills from "./pages/skills";
 import ProfilePage from "./pages/profile";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Contact from "./pages/Contact"; // Add this import
+import Contact from "./pages/Contact"; 
 import ProtectedRoute from "./components/ProtectedRoute";
 import AiToolsBoard from "./pages/ai-tools-board";
 import ArtBoard from "./pages/art-board";
@@ -33,7 +33,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/skills" element={<Skills />} />
-              <Route path="/contact" element={<Contact />} /> {/* Add this route */}
+              <Route path="/contact" element={<Contact />} /> 
               <Route path="/ai-tools" element={<AiToolsBoard />} />
               <Route path="/art" element={<ArtBoard />} />
               <Route path="/coding" element={<CodingBoard />} />
