@@ -1,116 +1,185 @@
 SkillSphere README
-
 Module Information
 
-Module Code COM4113
-Module Title Tech Stack
-Assessment Title Tech Stack Proposal
-Institution Leeds Trinity University
+Module Code: COM4113
+Module Title: Tech Stack
+Assessment Title: Tech Stack Proposal
+Institution: Leeds Trinity University
 
-This repository contains the front end implementation and documentation for the Skillsphere project.
+This repository contains the front-end implementation and supporting documentation for the SkillSphere project.
 
 Project Overview
 
-The SkillSphere is a web based platform designed to support community driven learning through the sharing of hobbies, skills, and learning resources. The platform allows users to browse content freely as a guest, reducing barriers to entry, while optional account creation unlocks enhanced features such as personal profiles and messaging.
+SkillSphere is a web-based platform designed to encourage community-driven learning by sharing hobbies, skills, and learning resources. Users can browse content freely as guests, removing barriers to entry, while creating an account unlocks additional features like personal profiles and messaging.
 
-The primary objective of this project is to demonstrate the design and implementation of a scalable and maintainable front end architecture using modern web development technologies. This version of the application focuses solely on the user interface and interaction logic, using mock data in place of persistent storage.
+The main goal of this project is to demonstrate the design and implementation of a scalable and maintainable front-end using modern web development tools. This version focuses on the user interface and interaction logic, using mock data instead of a fully functional backend.
 
-The scope of the project includes navigation, conditional feature access based on authentication state, responsive design, and clear user flows. Backend services, authentication servers, and databases are intentionally excluded at this stage and planned for future development.
+The project scope includes clear user flows, responsive design, conditional feature access based on authentication, and intuitive navigation. Backend services, authentication servers, and databases are intentionally excluded in this phase, with plans for future integration.
 
-Choice of Tech Stack and Justification
-
+Choice of Tech Stack
 React vs Other Frameworks
-React is pretty much the standard these days for web projects, and for good reason. It’s flexible, has a massive community, and makes it easy to build reusable components. But it’s not the only option. Vue.js is known for being beginner-friendly and has a gentler learning curve, which is great if you’re just starting out. Svelte is interesting because it compiles down to plain JavaScript, so your apps can feel faster and lighter. Angular is powerful for big projects, but it’s also heavier and a bit harder to get your head around. SolidJS and Qwik are newer and promise even better performance, especially if you’re building something that needs to be super fast.​
+
+React was chosen for its flexibility, large community support, and component-based architecture, making it easy to build reusable and maintainable code. Other frameworks were considered:
+
+Vue.js: Beginner-friendly with a gentle learning curve.
+
+Svelte: Compiles to plain JavaScript, making apps fast and lightweight.
+
+Angular: Powerful for large applications but heavier and more complex.
+
+SolidJS / Qwik: Newer frameworks with strong performance for high-speed applications.
+
+React was selected for its balance of performance, community support, and ease of building scalable UIs.
 
 Vite vs Other Build Tools
-Vite is the new kid on the block, and it’s really fast to set up and run. If you’ve ever waited ages for Webpack to start, you’ll appreciate how quick Vite is. Webpack is still popular for complex projects, but it’s slower and can be a pain to configure. Turbopack (used in Next.js) is great for big apps, but it’s still a bit new and not as well supported as Vite. Parcel is super simple to use, but it doesn’t have as many plugins or as big a community.​
+
+Vite was chosen as the build tool because of its fast startup time and simplified configuration. Alternatives considered:
+
+Webpack: Powerful but slower to configure and run.
+
+Turbopack: Promising for large apps but still new.
+
+Parcel: Simple to use but has fewer plugins and smaller community support.
 
 Tailwind CSS vs Other CSS Frameworks
-Tailwind’s utility-first approach makes it easy to keep your styles consistent and flexible, and its just-in-time compiler means you only load what you actually use. Bootstrap is more traditional, with lots of ready-made components, but it can feel a bit limiting if you want something unique. Windi CSS is like Tailwind but compiles even faster, so it’s good for bigger projects. Materialize CSS and Bulma are nice if you want pre-built components, but they’re not as easy to customise.
 
-Client side routing is handled using React Router, allowing logical separation of pages and seamless navigation without full page reloads.
+Tailwind CSS was used for its utility-first approach, which allows consistent styling while remaining flexible. Other options:
 
-Although no backend is implemented in this phase, future development plans include a RESTful API integrated with MongoDB. MongoDB has been identified as a suitable database due to its flexibility with user generated content and its scalability for community driven platforms.
+Bootstrap: Lots of pre-built components but can feel restrictive.
 
-Version Control and Development Practice
+Windi CSS: Similar to Tailwind but faster compilation.
 
-Git and GitHub were used consistently throughout the project to manage version control. The repository was accessed through GitHub Classroom and commits were made incrementally to reflect feature development, refactoring, and bug fixes.
+Materialize CSS / Bulma: Good for pre-built components but less customizable.
 
-This workflow demonstrates good software engineering practice by enabling traceability of changes, rollback capability, and structured project progression.
+Routing is handled with React Router, enabling smooth navigation and page separation without full reloads.
 
-Repository link https://github.com/Garycole12343/Assessment
+Future Backend Plans: The platform will later integrate with a RESTful API using MongoDB, chosen for its flexibility with user-generated content and scalability for community platforms.
+
+Version Control and Development Practices
+
+The project used Git and GitHub for version control, with commits reflecting incremental feature development, refactoring, and bug fixes. This approach demonstrates good software engineering practices by enabling:
+
+Traceability of changes
+
+Rollback capability
+
+Structured project progression
+
+Repository link: https://github.com/Garycole12343/Assessment
 
 Installation Instructions
 
-This project uses npm and is executed via Command Prompt.
+Ensure Node.js is installed.
 
-Node.js must be installed before running the application.
+Open a terminal and navigate to the project directory.
 
-Open Command Prompt and navigate to the project directory.
-Run npm install to install project dependencies.
-After installation, run npm run dev to start the development server.
-Open a browser and navigate to the local development address displayed in the terminal.
+Run npm install to install dependencies.
 
-The most common technical issue encountered was incompatible Node.js versions. This was resolved by installing the latest LTS version of Node.js and restarting the development environment.
+Start the development server with npm run dev.
+
+Open the displayed local address in your browser.
+
+Common Issue: Incompatible Node.js versions can cause errors. Installing the latest LTS version resolved this.
 
 Project Plan and Timeline
 
-Development followed a structured and iterative plan.
+Development followed a structured, iterative approach over nine weeks:
 
-The diagram below illustrates the planned phases for the SkillSphere front‑end implementation across a nine‑week schedule.
+Phase 1: Requirement analysis, technology evaluation, and user journey design.
 
-![SkillSphere project Gantt chart](src/images/Gantt-style_timeline.png)
+Phase 2: Environment setup with Vite and React, implementing core layout and navigation.
 
+Phase 3: Feature implementation, including conditional access to profile and messaging sections using mock data.
 
-The initial phase focused on requirement analysis, technology evaluation, and user journey design.
+Phase 4: Responsive styling, usability improvements, cross-device testing, and documentation refinement.
 
-The second phase involved environment setup using Vite and React, followed by implementation of the core layout and navigation system.
-
-The third phase focused on feature implementation, including conditional access to profile and messaging sections based on authentication state, using mock data.
-
-The final phase included responsive styling, usability improvements, testing across screen sizes, and documentation refinement.
-
-Minor adjustments were made to the original plan to improve navigation clarity and reduce interface complexity following usability testing.
+Minor adjustments were made to improve navigation clarity and simplify the interface based on usability feedback.
 
 User Journey and Interaction Flow
 
-Upon visiting the platform, users can immediately browse skills and resources as a guest. There is no forced login or sign up prompt, improving accessibility and user engagement.
+Guests can immediately browse skills and resources without signing up.
 
-A sign up option is permanently visible in the top right hand corner. Once a user signs up and is logged in, additional features such as the profile page and messaging functionality become accessible. This design balances openness with feature gated functionality.
+A permanent sign-up button in the top-right corner encourages account creation.
+
+Logged-in users can access additional features like profiles and messaging.
+
+This design ensures accessibility while providing gated functionality for registered users.
 
 Legal and Ethical Considerations
-
 GDPR and Data Protection
 
-At this MVP stage, GDPR compliance is only planned for the future, not actually implemented. This is a significant trade-off: while it lets us build a working prototype quickly, it means the project isn’t ready for real-world data protection standards. If the app were to launch and start collecting basic user information—like names or emails—it would need explicit consent, clear privacy policies, and secure data storage, none of which are in place yet. Just planning for GDPR isn’t enough; without real implementation, there’s a real risk of privacy breaches if the project is scaled up without proper safeguards.
+At this stage, GDPR compliance is planned but not implemented. While this allows rapid prototyping, any real user data collection would require:
+
+Explicit consent
+
+Clear privacy policies
+
+Secure data storage
+
+Without these measures, scaling the project could create privacy risks.
 
 Ethical Trade-offs
-The platform’s openness—letting users browse as guests—is a positive feature, but it also means there’s no effective way to monitor or moderate content. Without a moderation or reporting system, there’s a risk of misuse, such as inappropriate or misleading posts. This simplicity works for now, but it could harm the platform’s reputation and user trust over time. Planning for features like user reporting or content moderation is important, but until these are actually built, the ethical risks remain.
+
+The open browsing model improves accessibility but prevents content moderation. Risks include:
+
+Misuse of the platform (e.g., inappropriate or misleading posts)
+
+Potential damage to user trust
+
+Future implementation of reporting or moderation features will mitigate these risks.
 
 Risk Assessment
 
-Identified risks include lack of persistent data, absence of server side validation, and reliance on mock content. These risks are acceptable for a front end prototype and are documented transparently.
+Current risks include:
 
-Planned backend integration will mitigate these risks through secure APIs, database validation, and authentication services.
+No persistent data storage
+
+Lack of server-side validation
+
+Reliance on mock content
+
+These are acceptable for a front-end prototype. Planned backend integration will address these issues through secure APIs, authentication, and database validation.
 
 Good Software Attributes
 
-The project demonstrates maintainability through modular React components, readability through consistent naming conventions, and usability through responsive and intuitive interface design.
+The project demonstrates:
 
-The application is efficient for its current scope and has been structured to support future feature expansion without major refactoring.
+Maintainability: Modular React components
 
-Real World Applications
+Readability: Consistent naming conventions
 
-The platform could be applied to real world scenarios such as community education platforms, hobbyist networks, peer learning environments, and informal professional skill sharing communities.
+Usability: Intuitive, responsive interface
+
+Efficiency: Optimized for current scope and future feature expansion
+
+Real-World Applications
+
+SkillSphere could be applied to:
+
+Community education platforms
+
+Hobbyist networks
+
+Peer learning environments
+
+Informal professional skill-sharing communities
 
 Future Considerations for Scaling
 
-Future work will include integration with a backend API and MongoDB to enable persistent user data, authentication, messaging, and resource management. Additional features such as ratings, saved resources, and AI assisted recommendations can be layered on top of the existing architecture.
+Future development plans include:
 
-In Code Documentation
+Integration with a backend API and MongoDB for persistent data
 
-Key components and functions include inline comments that explain purpose, logic, and behaviour. This improves code readability and supports collaboration and future maintenance.
+Authentication and messaging
+
+Resource management
+
+Additional features such as ratings, saved resources, and AI-assisted recommendations
+
+In-Code Documentation
+
+Key components and functions include inline comments explaining their purpose and behavior, supporting code readability, collaboration, and future maintenance.
 
 AI Usage Declaration
 
-This assignment used generative AI to review the documentation and code for clarity, structure, and potential errors. All application code was written by the author. AI tools were used only as a checking and refinement aid and not to generate the core implementation.
+During this project, I used generative AI tools to review the documentation and code for clarity, structure, and potential errors. All application code was written by me. AI tools were only used to check and refine the work, not to generate the core implementation.
