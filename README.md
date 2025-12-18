@@ -80,9 +80,12 @@ A sign up option is permanently visible in the top right hand corner. Once a use
 
 Legal and Ethical Considerations
 
-The current implementation does not store sensitive personal data, reducing privacy and security risks at this stage. Ethical considerations include transparent feature access, respect for user autonomy, and responsible platform design.
+GDPR and Data Protection
 
-Future backend implementation will comply with data protection legislation such as GDPR and will include secure authentication, data encryption, and clear user consent mechanisms.
+At this MVP stage, GDPR compliance is only planned for the future, not actually implemented. This is a significant trade-off: while it lets us build a working prototype quickly, it means the project isn’t ready for real-world data protection standards. If the app were to launch and start collecting basic user information—like names or emails—it would need explicit consent, clear privacy policies, and secure data storage, none of which are in place yet. Just planning for GDPR isn’t enough; without real implementation, there’s a real risk of privacy breaches if the project is scaled up without proper safeguards.
+
+Ethical Trade-offs
+The platform’s openness—letting users browse as guests—is a positive feature, but it also means there’s no effective way to monitor or moderate content. Without a moderation or reporting system, there’s a risk of misuse, such as inappropriate or misleading posts. This simplicity works for now, but it could harm the platform’s reputation and user trust over time. Planning for features like user reporting or content moderation is important, but until these are actually built, the ethical risks remain.
 
 Risk Assessment
 
