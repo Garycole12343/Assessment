@@ -1,109 +1,180 @@
-SkillSphere README. Module Information.
+SkillSphere README
 
-Module Code: COM4113.
+Module Information
+
+Module Code: COM4113
 Module Title: Tech Stack
-Institution: Leeds Trinity University.
-Project Overview. From web-based platforms that enable the user to share his hobbies, skills and learning resources with you, it also promotes community-based learning as one way of doing so. You as a guest can freely browse through the content, for all that can be attained. You can sign up now for your personal profile and messages. SkillSphere is designed to exhibit how to build a scalable, maintainable front-end built using the latest web development technologies. The primary purpose of this preliminary phase is to work on the UI/interaction logic and also mock data rather than developing a live backend. We need to consider clear user flows, responsive design, feature access that's driven by your authentication, and how to get around the features in an easy way. Backend services, authentication servers, and databases will not be added during this stage but will come much later when need be.
+Institution: Leeds Trinity University
 
-Choice of Tech Stack. React vs. Other Frameworks. I chose React due to its adaptability, robust community support, and component-oriented architecture (we merged components to facilitate the writing of reusable code and avoid dependencies), allowing for maintainable code to be built. We also tested other frameworks:
+Project Overview
 
-Vue.js: Easy to use and very little learning curve.
-Svelte: A program to render code in simpler form with a neat, minimalist JavaScript libraries (from JavaScript with JavaScript stack compile time and simplicity, quick and lightweight development).
-Angular: Great for a big codebase but typically has a higher codebase complexity for bigger applications.
-SolidJS/Qwik: New and upcoming frameworks that are good at dynamic applications.
-Finally, React seemed to balance performance and maintainability, but at the same time was well suited for community support, so it was a good choice for our projects.
+SkillSphere is a website and socializing platform for users to promote community learning by sharing interests, skills and information. Guests browse the platform without having to register, and signing up also unlocks many features such as personal profiles and messaging.
 
-Vite vs. Other Build Tools. Due to Vite's speed of setup and configuration, I selected Vite as our build tool since I believe it has a faster startup time and easy configuration. We have other options we considered:
+SkillSphere is intended to demonstrate how one can create a scalable and manageable front-end that is built upon modern web development technologies. We concentrate on the UI (User Interface) & interaction logic with mock data, for example no backend at present. These features include obvious user flows, an efficient and responsive design, and conditional access to features based on authentication, with user-friendly navigation. In the future, backend services, authentication servers and databases will be planned.
 
-Other choices that I attempted to work with:
+The Choice of Tech Stack
 
-Webpack: Good power but slow to setup and run.
-Turbopack: Great for big, but new and better for big-data applications.
-Parcel: Friendly, but relatively few plugins and less community support.
-Tailwind CSS vs CSS Frameworks. Styling - Since we always want to keep the same style but still have an easy style with simplicity with the same structure, for styling, we used Tailwind CSS. The other frameworks we explored were:
+React vs Other Frameworks
 
-Bootstrap: These are a few types of pre-defined components, but it can be too restrictive as there are many items it contains.
-Windi CSS: Like Tailwind but much faster to compile
-Materialize CSS/Bulma: Great for premade assets but if you wanted a fast but dynamic build it becomes difficult.
-By using React Router for routing, we will go smoothly from page to page without reload to other pages without loads.
+We chose React for its modularity, a close-knit community, and component-based structure - which lets us build reusable, maintainable components. Other frameworks considered:
 
-Things to consider from Server-side perspective. Whilst the server side strategy for SkillSphere right now focuses greatly on the frontend, I have also done some thinking about some of the server side design too. User authentication, data persistence and content moderation will demand a great server setup. Suppose, for example, that we were developing a RESTful API with MongoDB and supporting this dynamic storage for user-generated content, profiles, messages and shared resources, on our scaling platform. The core concepts include sensitive data handling (for example hashed passwords and personally identifiable information) and validation and error handling to make sure data is true. Performance considerations for instance, would involve caching resources most frequently used as well as enhancing the response time of the database queries to application load. And server-side logging and monitoring would help us in preventing any of these issues, in advance.
+Vue.js: Easy to use with low learning curve.
+Svelte: Compiles to simple JavaScript which is small and fast.
+Angular: General for large code bases; complex but effective.
+SolidJS/Qwik: New frameworks for short-paced, high efficiency apps.
 
-Optional Server-side Framework Comparison
+React balances between speed, maintainability and wide community support.
 
-We will discuss different server-side frameworks in future:
+Vite vs Other Build Tools
 
-Node.js with Express: A lightweight, JavaScript-based design that fits well with React Front End.
-Django: A more formal (Python based) framework with built-in authentication & admin features, but heavier for smaller projects.
-Firebase: A run-on-cloud, managed backend service with a real-time database. Less need for server maintenance but not as many modules.
-Node.js/Express is preferred for its flexibility and strong community support among the JavaScript ecosystem at these times. We use Git and GitHub for version control. All feature additions and bug fixes are included in the commit files of our app, which maintains good development practices that possess at least three attributes:
+For easy setup and quickness, Vite was chosen. Other tools considered:
 
-Traceability of changes.
-Rollback capabilities.
-Organized project delivery cycle.
-GitHub Repository: (https://github.com/Garycole12343/Assessment). Open a terminal and go to the project directory. Run
+Webpack: Powerful but slower to set up, run or configure.
+Turbopack: It's new too, good when creating large applications, but less mature.
+Parcel: Basic but lacking some plugin and community support.
 
-Copy code
-npm install to install the required dependencies. Run
+Tailwind CSS vs Other CSS Frameworks
 
-Copy code
-npm run dev; run its server in your browser; see what is installed. Main problem to be fixed:
+Tailwind CSS: Used to ensure uniform CSS styling with flexibility and adaptability. Other frameworks explored:
 
-Non-compatible Node.js versions are the main source of errors. I fixed this by ensuring that the most recent LTS version is installed.
+Bootstrap: Pre-compiled parts, much more restrictive.
+Windi CSS: Similar to Tailwind; but quicker compile time with more flexibility.
+Materialize CSS/Bulma: They are pre-packaged assets but are less portable for dynamic builds.
+
+Routing is handled with the use of React Router and the user can switch between pages without reloading.
+
+Server-Side Considerations
+
+SkillSphere, which is being focused on the front-end, has now been recommended for a server-side design. A well-built backend is essential as there are user signups, data persistence and content moderation.
+
+For example, MongoDB and a RESTful API could support dynamic content storage for user-generated documents, user personal profiles, messages and resources sharing. Key considerations include:
+
+Safe way to manage the sensitive data (hashed passwords, personal info)
+
+Data integrity in input validation and error handling
+
+Optimized performance by caching commonly used resources and speedy database queries
+
+Server-side logging and monitoring to proactively find and fix problems
+
+Planning a secure, maintainable, and scalable backend for smooth future integration should be done early on.
+
+Server-Side Framework
+
+Node.js using Express: This is a lightweight, JavaScript-based framework that has built-in support for React front-end.
+Django: Framework written in structured Python with automated authentication/admin (for larger projects).
+Firebase: Orchestration of cloud backend with real time database, easier to manage but less custom modules.
+
+Node.js/Express has been chosen as being flexible and powerful for the community.
+
+Versioning and Development Standards
+
+Version control was done using Git and GitHub. Feature additions and bug fixes were tracked for reliability. Rollback capability is ensured, and project delivery follows a regular schedule.
+
+Repository link: https://github.com/Garycole12343/Assessment
+
+Installation Instructions
+
+Open your terminal and log into the project directory.
+Install dependencies using npm install.
+Start the dev server with npm run dev.
+Check your terminal output and open your local address in a browser.
+
+Common Issue: Non-compatible Node.js versions can cause errors. The issue can be resolved by installing the latest LTS version.
 
 Project Plan and Timeline
-For implementation, I did something like a comprehensive, incremental process over nine weeks:
 
-Phase 1: Necessitate analyses, review of tech, and design of user journey concept.
-Phase 2: Building environmental setups with Vite and React, and initial layout / navigation.
-Phase 3: Use of fake data to apply features that are allowed in profiles and messaging sections (or provide only conditional access).
-Phase 4: Response styling, usability improvement, end-user testing, document refinement, testing from devices.
-To provide a clear visual overview of this timeline, a detailed Gantt-style chart has been created and included in the project repository at
+Development was constructed as an incremental process over 9 weeks:
 
-Copy code
-src\images\Gantt-style_timeline.png. This chart breaks down tasks and milestones into time-bound phases, helping track progress and manage deliverables effectively throughout development.
+Phase 1: Requirement studies, tech review, user journey design.
+Phase 2: Environment design with Vite and React, initial layout and navigation.
+Phase 3: Feature design on mock data, conditional access for profiles and messaging.
+Phase 4: Re-styling, usability, mobile adaptation, re-specification of documentation, and testing across devices.
+
+Gantt style chart :(src/images/Gantt-style_timeline.png)
 
 User Journey of Interaction
-Guests can pick up skills and resources right away without having to sign up. A large signup button in the top-right-hand corner serves as a prompt to signup for a personal online account that has many more features like profiles and messaging. It is an easy to use system but limited in functionality to the limited number of registered users. I plan to be GDPR-compliant but have not used it. This allows for rapid prototyping, but collecting user data would require:
 
-Explicit consent.
-Clear privacy policies.
-Secure data storage.
-But without such safeguards, scaling up the project might threaten privacy.
+Guests will be able to quickly browse skills and resources without needing to sign up. A sign-up button in the top right enables users to log in or sign up to see more features like profiles and messaging. The platform is built for ease, but currently it restricts features to those who have yet to sign in.
 
-Ethical Trade-offs
-The open browsing model broadens access to the platform but does not include content moderation, which can lead to negative repercussions, including:
+Legal, Ethical and Risks Implications
 
-Misuse of the platform (for example: inappropriate/misleading content).
-Potential declining user trust.
-Moving forward, the next updates emphasize that these risks will be minimized and mitigated through reporting and moderating capabilities.
+GDPR and Data Protection: The development of GDPR compliance is planned for the future. All data collection from users will require:
+
+Explicit consent
+Clear privacy policies
+Secure storage of the data
+
+Ethical trade-offs: Open browsing expands access, but with no content moderation, which could cause:
+
+Misuse of the platform (inappropriate or misleading content)
+Decreased user trust
+
+Reporting and moderation plans in future updates will aim to mitigate such risks.
 
 Risk Assessment
+
 Current risks include:
 
-No persistent data storage.
-No server side validation.
-Reliance on mock data.
-To avoid these problems, we will assist with our backend integration with secure APIs and support of authentication and database.
+No persistent data storage
+No server-side validation
+Reliance on mock data
+
+Backend integration with secure APIs, authentication, and database support will help mitigate the risk.
 
 Good Software Attributes
-This project exemplifies:
 
-Maintainability: React Components as Modularity.
-Readability: Same naming concepts.
-Usability: Simple and easy to use.
-Efficiency: Built for today and tomorrow.
+Maintainability: React components are modular.
+Readability: Same naming conventions across the board.
+Usability: A straightforward, accessible interface.
+Efficiency: Developed for the present state and future potential.
+
 Real-World Applications
-SkillSphere has several functionalities as:
 
-For community education.
-Hobbyist networks.
-Peer learning environments.
-Casual professional skill-sharing networks.
+SkillSphere can be applied to:
+
+Community education sites
+Hobbyist networks
+Peer learning environments
+Casual professional skill-sharing networks
+
 Areas for Future Scaling
-Things that could be considered in the future include:
 
-API (backend) and MongoDB connection for backup, and persistence of data.
-Authentication and messenger capabilities.
-Resource management.
-Recommendations, ratings, retained resources, AI alerts, etc.
+Backend API and MongoDB for persistent data
+Authentication and messaging
+Resource management
+Recommendations, ratings, saved resources, AI alerts
+
+Post-MVP Enhancements
+
+Messaging Functionality: The platform will allow logged-in users to simulate chats by sending/receiving messages using React state.
+Rationale: Messaging encourages community engagement through dynamic state management and conditional rendering.
+Future Considerations: Backend with persistent storage will allow real-time updates and multi-user communication.
+
+Ratings and Reviews: Skills/Resources can be rated or evaluated by users. Ratings are stored in React state and displayed alongside each resource.
+Rationale: Ratings improve discoverability and trust, demonstrating dynamic input handling, component updates, and state management.
+Future Work: Backend storage will allow aggregation and calculation of average scores per resource.
+
+Search and Filter: The app includes a search bar to filter Skills/Resources by keywords using React state and array filtering methods.
+Justification: Search improves usability and navigation and shows how React can be used to interactively manipulate data and enhance the UI.
+Future Work: Backend integration will allow scalable, optimized queries with advanced filters.
+
+Site Map
+
+Home
+│
+├─ Browse Skills/Resources
+│
+├─ Signup/Login ──> Profile (User)
+│ │
+│ ├─ Messaging
+│ └─ Saved Resources / Ratings
+│
+└─ Search / Filter
+
+Gantt-style chart placeholder: [Insert image of project timeline here]
+Site map diagram placeholder: [Insert Figma or flowchart diagram here]
+
+AI Usage Declaration
+
+Using generative AI techniques, documentation and code were reviewed for clarity, structure, and error checking. All application code was written by the author. AI was only used to review and refine the documentation.
