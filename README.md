@@ -54,6 +54,11 @@ Project Plan and Timeline
 
 Development followed a structured and iterative plan.
 
+The diagram below illustrates the planned phases for the SkillSphere front‑end implementation across a nine‑week schedule.
+
+![SkillSphere project Gantt chart](src/images/Gantt-style_timeline.png)
+
+
 The initial phase focused on requirement analysis, technology evaluation, and user journey design.
 
 The second phase involved environment setup using Vite and React, followed by implementation of the core layout and navigation system.
