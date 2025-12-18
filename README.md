@@ -1,4 +1,4 @@
-Community Skill Swap Hub README
+SkillSphere README
 
 Module Information
 
@@ -7,11 +7,11 @@ Module Title Tech Stack
 Assessment Title Tech Stack Proposal
 Institution Leeds Trinity University
 
-This repository contains the front end implementation and documentation for the Community Skill Swap Hub project.
+This repository contains the front end implementation and documentation for the Skillsphere project.
 
 Project Overview
 
-The Community Skill Swap Hub is a web based platform designed to support community driven learning through the sharing of hobbies, skills, and learning resources. The platform allows users to browse content freely as a guest, reducing barriers to entry, while optional account creation unlocks enhanced features such as personal profiles and messaging.
+The SkillSphere is a web based platform designed to support community driven learning through the sharing of hobbies, skills, and learning resources. The platform allows users to browse content freely as a guest, reducing barriers to entry, while optional account creation unlocks enhanced features such as personal profiles and messaging.
 
 The primary objective of this project is to demonstrate the design and implementation of a scalable and maintainable front end architecture using modern web development technologies. This version of the application focuses solely on the user interface and interaction logic, using mock data in place of persistent storage.
 
